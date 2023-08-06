@@ -7,11 +7,18 @@ for (let i = 0; i < buttons.length; i++) {
   });
 }
 
-const equalsButton = document.getElementById("equals-button")
+const equalsButton = document.getElementById("equals-button");
+const screen = document.getElementById("screen");
 
-equalsButton.addEventListener("click", ()=> {
-  let screenContent = document.getElementById("screen").textContent
-  const screen = document.getElementById("screen");
-  screen.textContent = eval(screenContent);
+equalsButton.addEventListener("click", () => {
+  let screenContent = document.getElementById("screen").textContent;
   
+  screen.textContent = eval(screenContent);
+});
+
+
+const clearButton = document.getElementById("clear-button");
+
+clearButton.addEventListener("click", () => {
+  screen.textContent = ""
 })
