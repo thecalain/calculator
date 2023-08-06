@@ -14,5 +14,4 @@ equalsButton.addEventListener("click", ()=> {
   const screen = document.getElementById("screen");
   screen.textContent = eval(screenContent);
   
-  
 })
